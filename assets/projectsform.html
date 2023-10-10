@@ -1,0 +1,202 @@
+<html>
+<head>
+<title>Projects</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<script type="text/javascript" src="javascripts/jquery-1.4.2.min.js"></script>
+<script type="text/javascript" src="javascripts/jquery-ui.min.js"></script>
+<link href="css/jquery-ui.css" rel="stylesheet" type="text/css"/>
+
+<style type="text/css">
+
+h1, p, a, body {
+	font-family: Verdana;
+}
+
+table.dbatom {
+	border-width: 3px;
+	border-spacing: 2px;
+	border-style: groove;
+	border-color: black;
+	border-collapse: collapse;
+	
+}
+table.dbatom th {
+	border-width: 1px;
+	padding: 1px;
+	border-style: groove;
+	border-color: gray;
+	background-color: gray;
+	-moz-border-radius: 
+}
+table.dbatom td {
+	border-width: 1px;
+	padding: 1px;
+	border-style: groove;
+	border-color: gray;
+	background-color: white;
+	-moz-border-radius: 
+}
+</style>
+
+<script>
+  $(document).ready(function() {
+    //$("#iDate").datepicker({ dateFormat: 'yy-mm-dd' });
+
+  });
+  </script>
+
+
+</head>
+
+<body>
+
+<script type="text/javascript">
+function addstuff(var1, var2, var3){
+	
+	var myTextField = document.getElementById(var1);
+	
+	var myTextField2 = document.getElementById(var2);
+	
+	if (var3 == 'skipcoma') myTextField.value += myTextField2.options[myTextField2.selectedIndex].text;
+	else myTextField.value += myTextField2.options[myTextField2.selectedIndex].text + ", ";
+	
+	
+}
+
+function replacestuff(var1, var2){
+	
+	var myTextField = document.getElementById(var1);
+	
+	var myTextField2 = document.getElementById(var2);
+	
+	myTextField.value = myTextField2.options[myTextField2.selectedIndex].text;
+	
+	
+}
+</script>
+
+<center>
+<div>
+<p><i><b>xxx_ActionYYY Project Form</b></i>:</p>
+<form method="post" action="admin.php?xxx_ActionURLYYY" name="form1" target="_self" id="form1">
+  <table width="65%" border="1" class="dbatom">
+	
+	<tr style="visibility:hidden" > 
+      <td width="52%" style="background-color:#DDDDDD"><b>Grid:</b></td>
+      <td width="48%"> 
+        <input type="text" style="border:none" name="iGrid" id="iGrid" size="160" value="xxx_gridYYY">   </td>
+    </tr>
+  
+    <tr> 
+      <td width="52%" style="background-color:#DDDDDD"><b>Name:</b></td>
+      <td width="48%"> 
+        <input type="text" style="border:none" name="iName" id="iName" size="160" value="xxx_nameYYY">   </td>
+    </tr>
+    <tr> 
+      <td width="52%" style="background-color:#DDDDDD"><b>Status:</b></td>
+      <td width="48%"> 
+        <input type="text" style="border:none" name="iStatus" id="iStatus" size="160" value="xxx_statusYYY">   </td>
+    </tr>
+    <tr> 
+      <td width="52%" style="background-color:#DDDDDD"><b>Location:</b></td>
+      <td width="48%"> 
+        <input type="text" style="border:none" name="iLocation" id="iLocation" size="160" value="xxx_locationYYY">   </td>
+    </tr>
+    <tr> 
+      <td width="52%" style="background-color:#DDDDDD"><b>Description:</b></td>
+      <td width="48%"> 
+        <textarea style="border:none" name="iDescription" id="iDescription" cols="120" rows="3">xxx_descriptionYYY</textarea>      </td>
+    </tr>
+    <tr> 
+      <td width="52%" style="background-color:#DDDDDD"><b>Type:</b></td>
+      <td width="48%"> 
+        <input type="text" readonly="true" style="border:none" name="iType" id="iType" size="160" value="xxx_typeYYY">  <select id="listbox0" onchange="replacestuff('iType', 'listbox0')">xxx_listTypesYYY</select>     </td>
+    </tr>
+    <tr> 
+      <td width="52%" style="background-color:#DDDDDD"><b>Size:</b></td>
+      <td width="48%"> 
+        <input type="text" style="border:none" name="iArea" id="iArea" size="160" value="xxx_areaYYY">      </td>
+    </tr>
+
+    <tr> 
+      <td width="52%" style="background-color:#DDDDDD"><b>Completion Year:</b></td>
+      <td width="48%"> 
+        <input type="text" style="border:none" name="icompletionYear" id="icompletionYear" size="160" value="xxx_completionYearYYY">      </td>
+    </tr>
+    <tr> 
+      <td width="52%" style="background-color:#DDDDDD"><b>Cost:</b></td>
+      <td width="48%"> 
+        <input type="text" style="border:none" name="iCost" id="iCost" size="160" value="xxx_costYYY">      </td>
+    </tr>
+    <tr> 
+      <td width="52%" style="background-color:#DDDDDD"><b>Ranking:</b></td>
+      <td width="48%"> 
+        <input type="text" style="border:none" name="iRanking" id="iRanking" size="160" value="xxx_rankingYYY">      </td>
+    </tr>
+    <tr> 
+      <td width="52%" style="background-color:#DDDDDD"><b>Website:</b></td>
+      <td width="48%"> 
+        <input type="text" style="border:none" name="iWebsite" id="iWebsite" size="160" value="xxx_websiteYYY">      </td>
+    </tr>
+    <tr> 
+      <td width="52%" style="background-color:#DDDDDD"><b>Client:</b></td>
+      <td width="48%"> 
+        <input type="text" style="border:none" name="iClient" id="iClient" size="160" value="xxx_clientYYY"> <select id="listbox1">xxx_listNamesClientYYY</select>  <input type="button" value="add" onclick="addstuff('iClient', 'listbox1')">     </td>
+    </tr>
+
+
+    <tr> 
+      <td width="52%" style="background-color:#DDDDDD"><b>Architects:</b></td>
+      <td width="48%"> 
+        <input type="text" style="border:none" name="iArchitects" id="iArchitects" size="160" value="xxx_ArchitectsYYY"> <select id="listbox5">xxx_listNamesArchitectsYYY</select>  <input type="button" value="add" onclick="addstuff('iArchitects', 'listbox5')">     </td>
+    </tr>
+    <tr> 
+      <td width="52%" style="background-color:#DDDDDD"><b>Engineers:</b></td>
+      <td width="48%"> 
+        <input type="text" style="border:none" name="iEnginners" id="iEnginners" size="160" value="xxx_EngineersYYY"> <select id="listbox6">xxx_listNamesEngineersYYY</select>  <input type="button" value="add" onclick="addstuff('iEnginners', 'listbox6')">     </td>
+    </tr>
+
+
+    <tr> 
+      <td width="52%" style="background-color:#DDDDDD"><b>ICON:</b></td>
+      <td width="48%"> 
+        <input type="text" disabled="disabled" style="border:none" name="iicons" id="iicons" size="160" value="xxx_iconsYYY">   <br> <div style="visibility:hidden"> <a href='admin.php?EDITPROJECTPIX=1&CATEGORY=icons&PROJECT=xxx_projectYYY'>EDIT Icon</a> </div> XXXiconsPix  </td>
+    </tr>
+    <tr> 
+      <td width="52%" style="background-color:#DDDDDD"><b>Images:</b></td>
+      <td width="48%"> 
+        <input type="text" disabled="disabled" style="border:none" name="iimages" id="iimages" size="160" value="xxx_imagesYYY">   <br> <div style="visibility:hidden"> <a href='admin.php?EDITPROJECTPIX=1&CATEGORY=images&PROJECT=xxx_projectYYY'>EDIT Pictures</a> </div>  XXXimagesPix   </td>
+    </tr>
+    <tr> 
+      <td width="52%" style="background-color:#DDDDDD"><b>Sketches:</b></td>
+      <td width="48%"> 
+        <input type="text" disabled="disabled" style="border:none" name="isketches" id="isketches" size="160" value="xxx_sketchesYYY">   <br> <div style="visibility:hidden"> <a href='admin.php?EDITPROJECTPIX=1&CATEGORY=sketches&PROJECT=xxx_projectYYY'>EDIT Pictures</a> </div>  XXXsketchesPix   </td>
+    </tr>
+
+
+    <tr> 
+      <td width="52%" style="background-color:#DDDDDD"><b>Site:</b></td>
+      <td width="48%"> 
+        <input type="text" disabled="disabled" style="border:none" name="isite" id="isite" size="160" value="xxx_siteYYY"> <br> <div style="visibility:hidden"> <a href='admin.php?EDITPROJECTPIX=1&CATEGORY=site&PROJECT=xxx_projectYYY'>EDIT Pictures</a> </div>  XXXsitePix     </td>
+    </tr>
+
+
+    <tr> 
+      <td width="52%" style="background-color:#DDDDDD"><b>Animation:</b></td>
+      <td width="48%"> 
+        <input type="text" style="border:none" name="ianimation" id="ianimation" size="160" value="xxx_animationYYY">  <br> <div style="visibility:hidden"> <a href='admin.php?EDITPROJECTVIDEO=1&PROJECT=xxx_projectYYY'>EDIT ANIMATION VIDEO</a> </div> </td>
+    </tr>
+
+    
+    
+    
+  </table>
+  <p>
+    <input type="submit" name="Submit" value="xxx_ActionYYY Project">
+  </p>
+</form>
+</div>
+</center>
+</body>
+</html>

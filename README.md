@@ -9,3 +9,7 @@ Comes with one of its demo frontends for portofolios
 
 Missing alot of features compared to modern frameworks like Lavarel and Yii, but it did get the job done 
 
+Import .sql
+
+Some libraries/extensions wont work like the flash video player
+

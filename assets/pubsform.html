@@ -1,0 +1,93 @@
+<html>
+<head>
+<title>PDF ARTICLES</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<script type="text/javascript" src="javascripts/jquery-1.4.2.min.js"></script>
+<script type="text/javascript" src="javascripts/jquery-ui.min.js"></script>
+<link href="css/jquery-ui.css" rel="stylesheet" type="text/css"/>
+
+<style type="text/css">
+
+h1, p, a, body {
+	font-family: Verdana;
+}
+
+table.dbatom {
+	border-width: 3px;
+	border-spacing: 2px;
+	border-style: groove;
+	border-color: black;
+	border-collapse: collapse;
+	
+}
+table.dbatom th {
+	border-width: 1px;
+	padding: 1px;
+	border-style: groove;
+	border-color: gray;
+	background-color: gray;
+	-moz-border-radius: ;
+}
+table.dbatom td {
+	border-width: 1px;
+	padding: 1px;
+	border-style: groove;
+	border-color: gray;
+	background-color: white;
+	-moz-border-radius: ;
+}
+</style>
+
+<script>
+  $(document).ready(function() {
+    $("#iDate").datepicker({ dateFormat: 'yy-mm-dd' });
+
+  });
+</script>
+
+
+</head>
+
+<body>
+
+
+
+<center>
+<div>
+<p><i><b>xxx_ActionYYY PDF PRESS Form</b></i>:</p>
+<form method="post" action="admin.php?xxx_ActionURLYYY" name="form1" target="_self" id="form1">
+  <table width="65%" border="1" class="dbatom">
+    <tr> 
+      <td width="52%" style="background-color:#DDDDDD"><b>Info:</b></td>
+      <td width="48%"> 
+        <input type="text" style="border:none" name="iInfo" id="iInfo" size="160" value="xxx_infoYYY">   </td>
+    </tr>
+    <tr> 
+      <td width="52%" style="background-color:#DDDDDD"><b>Date:</b></td>
+      <td width="48%"> 
+        <input type="text" style="border:none" name="iDate" id="iDate" size="160" value="xxx_dateYYY">   </td>
+    </tr>
+    <tr> 
+      <td width="52%" style="background-color:#DDDDDD"><b>Hyperlink:</b></td>
+      <td width="48%"> 
+        <input type="text" style="border:none" name="iHyperlink" id="iHyperlink" size="160" value="xxx_hyperlinkYYY">   </td>
+    </tr>
+    
+    <tr> 
+      <td width="52%" style="background-color:#DDDDDD"><b>Picture:</b></td>
+      <td width="48%"> 
+        <br> <div style="visibility:hidden"> <a href='admin.php?EDITPUBSPIX=1&ID=xxx_pubsIDYYY'>EDIT</a> </div>   </td>
+    </tr>
+    
+    
+    
+  </table>
+  <p>
+    <input type="submit" name="Submit" value="xxx_ActionYYY PDF ARTICLES">
+  </p>
+</form>
+</div>
+</center>
+</body>
+</html>

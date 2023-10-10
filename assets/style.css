@@ -1,0 +1,74 @@
+<style type="text/css">
+
+h1, p, a, body {
+	font-family: Verdana;
+}
+
+table.dbatom {
+
+	table-layout:fixed;
+	width:80%;
+	
+	border-width: 3px;
+	border-spacing: 2px;
+	border-style: groove;
+	border-color: black;
+	border-collapse: collapse;
+	
+}
+table.dbatom th {
+	border-width: 1px;
+	padding: 1px;
+	border-style: groove;
+	border-color: gray;
+	background-color: gray;
+	-moz-border-radius: ;
+	
+	
+}
+table.dbatom td {
+	border-width: 1px;
+	padding: 1px;
+	border-style: groove;
+	border-color: gray;
+	background-color: white;
+	-moz-border-radius: ;
+	
+        text-overflow:ellipsis;
+        overflow:hidden;
+        white-space:nowrap;
+        
+        
+        max-width: 75px;
+	
+	
+}
+
+a:visited.leftmenu {color:#ffffff}
+
+
+a.leftmenu{
+	float:left;
+	font-size:100%;
+	font-weight:bold;				
+	border-top:1px solid #999;
+	border-left:1px solid #999;
+	border-right:1px solid #333;
+	border-bottom:1px solid #333;
+	border-color:#666;	
+	background-color:#aaaaaa;	
+	color:white;
+	width:150px;
+	text-decoration: none;
+	font-family: Verdana;
+	
+	}	
+a:hover.leftmenu{	
+	border-top:1px solid #333;
+	border-left:1px solid #333;
+	border-right:1px solid #999;
+	border-bottom:1px solid #999;	
+	color:#00FF00;	
+	text-decoration: none;				
+	}	
+</style>

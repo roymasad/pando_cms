@@ -1,0 +1,30 @@
+<html>
+<head>
+	<title>Edit Page</title>
+	<script type="text/javascript" src="ckeditor/ckeditor.js"></script>
+</head>
+<body>
+	<form method="post" action="admin.php?EDITPAGE=1&PAGE=xxx_PageYYY&SUBMIT=1">
+		<p>
+			Edit xxx_PageYYY Page :<br />
+			<textarea id="editor1" name="editor1">PAGE=xxx_PageHTMLYYY</textarea>
+			<script type="text/javascript">
+				CKEDITOR.replace( 'editor1' , { height:600 ,
+				
+				
+					filebrowserBrowseUrl :'ckeditor/filemanager/browser/default/browser.html?Connector=/tests/blob/ckeditor/filemanager/connectors/php/connector.php',
+					
+					filebrowserImageBrowseUrl : 'ckeditor/filemanager/browser/default/browser.html?Type=Image&Connector=/tests/blob/ckeditor/filemanager/connectors/php/connector.php',
+					
+					filebrowserFlashBrowseUrl :'ckeditor/filemanager/browser/default/browser.html?Type=Flash&Connector=/tests/blob/ckeditor/filemanager/connectors/php/connector.php'
+				
+				
+				} );
+			</script>
+		</p>
+		<p>
+			<input type="submit" />
+		</p>
+	</form>
+</body>
+</html>

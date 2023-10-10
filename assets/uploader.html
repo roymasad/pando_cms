@@ -1,0 +1,21 @@
+<style type="text/css">
+<!--
+body,td,th {
+	color: #000000;
+}
+body {
+	background-color: #ffffff;
+}
+.style1 {	color: #000000;
+	font-weight: bold;
+}
+.style4 {color: #000000; font-weight: bold; }
+-->
+</style>
+<p><b> NB: DONT UPLOAD FILES WITH SPACES IN THE FILENAME</b></p>
+<form enctype="multipart/form-data" action="admin.php?UPLOAD=1&UPLOADOPTIONS" method="POST">
+Choose a file to upload: <input name="uploadedfile[]" type="file" multiple="true" /><br />
+<input type="submit" value="Upload File" />
+</form>
+
+
