@@ -1,6 +1,10 @@
 # pando_cms
 PHP 5 custom CMS for portfolio websites
 
+![](screenshot1.png)
+![](screenshot2.png)
+![](screenshot3.png)
+
 I built it and used it/updated it from 2009 to 2012
 
 Simple but allowed to customize its template admin dashboard for CRUD operations
